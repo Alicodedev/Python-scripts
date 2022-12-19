@@ -1,0 +1,70 @@
+# resistor object with tolerence colors  and
+class resistor:
+    def __init__(self,bands,mult,tolerence):
+        self.bands = bands
+        self.mult = mult
+        self.tolerence = tolerence
+
+
+    #function for calculating resistor value
+    def res_calc(self):
+        total = self.bands * self.mult/1000
+        final = self.tolerence
+
+        print("You're calculated resistor is =",total,'K','tolerence',final)
+
+
+
+
+# color band values
+R = 2
+O = 3
+y = 4
+B = 6
+V = 7
+
+# tolerence
+G = +-5
+
+# multipler
+R_Mx = 100
+
+# resistor color bands sotred in abc list
+abc = [R,O,B] # can you store the attriabutes of class in a list
+
+#use the index of the list
+
+# band_1,band_2, band_3 combine all digits 1st
+ban_num = int("".join([str(i) for i in abc]))
+
+# the object
+res = resistor(ban_num ,R_Mx, G)
+
+#res.res_calc(ban_num , R_Mx)
+res.res_calc()
+
+
+
+
+#print(res.band_1) # calling the object attrabuite with its name not input
+
+# use object method to calculate the resistor values
+
+
+
+#print('whole number',res_num)
+
+# function for calculating resistor values 2nd
+
+
+
+
+
+# print it out
+"""
+##improvments ##
+"""
+
+
+#color values list all color values make an list for each value and store it to
+#a variable /

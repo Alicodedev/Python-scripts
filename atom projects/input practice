@@ -1,0 +1,7 @@
+#shift b
+
+#function with input
+
+
+a = input("hello type something")
+print(a)
